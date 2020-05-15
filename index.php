@@ -33,6 +33,8 @@ function sendPushNotification($to = "", $data = array()){
 	print('6');
 }
   
+sendPushNotification();  
+  
 //include PushNotifications.php file and call sendPushNotification method on your page
  
 //require_once 'example.php';
