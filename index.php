@@ -14,7 +14,7 @@
 			echo "This is the index";
 		?>
 		<ul>
-			<li><a href="example.php"> List all products </a>  </li>
+			<li><a href="example.php"> example.php </a>  </li>
 		</ul>
 	</body>
 	
