@@ -1,4 +1,4 @@
 <?php
-	echo "This is the index";
+	print( "This is the index");
 
 		
