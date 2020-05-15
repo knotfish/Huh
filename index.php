@@ -13,5 +13,10 @@
 		<?php
 			echo "This is the index";
 		?>
+		<ul>
+			<li><a href="example.php"> List all products </a>  </li>
+		</ul>
 	</body>
+	
+	
 </html>	
