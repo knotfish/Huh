@@ -9,7 +9,7 @@
 		<?php
 			echo "This is the index";
 			
-			public function funk(){
+			function funk(){
 				echo "This is a function";
 			}
 			
