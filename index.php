@@ -7,10 +7,10 @@
 	
 	<body>
 		<?php
-			echo "This is the index";
+			echo "This is the index\n";
 			
 			function funk(){
-				echo "This is a function";
+				echo "This is a function\n";
 			}
 			
 			funk();

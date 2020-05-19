@@ -1,8 +1,8 @@
 <?php
-			echo "This is a test";
+			echo "This is a test\n";
 			
 			function funk(){
-				echo "This is a function";
+				echo "This is a function\";
 			}
 			
 			funk();
