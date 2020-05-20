@@ -3,7 +3,7 @@
 
 	function sendPushNotification($to = '', $data = array()){
 	
-		$apiKey = 'AIzaSyCypTohpSRrCDlCnlA5QtYbyFlQFQj1ib8'; 
+		$apiKey = 'AAAA4QcnW_8:APA91bEdc3LdsGOhcGrDuhalIi2apF-xg35gBZiqDD_L4PJ87iCLAgkioT0HKf7Yd_6BSr4YoikwgGxuWukQw8abcn9N0a1yinyshSmfpwS4G50oQQeG6eswTZ1FYq4-b71qhh7T4sPA'; 
 		$fields = array('to' => $to, 'notification' => $msg);
 
 		$headers = array('Authorization: key='.$apiKey, 'Content-Type: application/json');
