@@ -2,10 +2,10 @@
 
 
 		<?php
-			echo "This is the index/n";
+			print("This is the index/n");
 			
 			function funk(){
-				echo "This is a function/n/n/n/n";
+				print("This is a function/n/n/n/n");
 			}
 			
 			funk();
