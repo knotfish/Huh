@@ -1,17 +1,15 @@
 
 <?php
 
-	function sendPushNotification(){
+	function sendPushNotification($to = '', $data = array()){
 	
 		$apiKey = 'AIzaSyCypTohpSRrCDlCnlA5QtYbyFlQFQj1ib8'; 
 		$fields = array('to' => $to, 'notification' => $msg);
 
 		$headers = array('Authorization: key='.$apiKey, 'Content-Type: application/json');
 
-		$url = "https://fcm.googleapis.com/fcm/send";  
-
-		 
-            
+		$url = "https://fcm.googleapis.com/fcm/send";
+ 
 		$ch = curl_init(); 
 		curl_setopt( $ch, CURLOPT_URL,$url);
 		curl_setopt( $ch, CURLOPT_POST, true);
@@ -29,5 +27,6 @@
 	$to = "fOyoviWU-EQ:APA91bFYYOot6p1I8P42pi_zPQrGf8Lmzl9tYH4YEVPF-ECmmFGe_-nKMoeVa2dzX7ikAs_OBeZXK8MoY8YhpZq0AOT0Ne47NoKHRfSz_0Etk9W-7IG0qg39UppREZoIuJbod0-mTtD6";
 	$data = array( 
 		'body' => 'message text'
-	);       
-?>
+	);
+	print_r(sendPushNotification($to, $data));
+
