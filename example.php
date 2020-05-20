@@ -1,8 +1,6 @@
 
 <?php
-print('z');
- 
-public function sendPushNotification(){
+print('z');function sendPushNotification(){
 	
 	$API_ACCESS_KEY = 'AIzaSyCypTohpSRrCDlCnlA5QtYbyFlQFQj1ib8'; // YOUR_FIREBASE_API_KEY
 	
