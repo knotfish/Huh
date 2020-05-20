@@ -13,27 +13,26 @@
 		$ch = curl_init(); 
 		curl_setopt( $ch, CURLOPT_URL,$url);
 		
-		print("1");
 
 		curl_setopt( $ch, CURLOPT_POST, true);
 
-		print("2");
+
 
 		curl_setopt( $ch, CURLOPT_HTTPHEADER, $headers);
 
-		print("3");
+
 
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true);
 
-		print("4");
+
 
 		curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false);
 
-		print("5");
+
 
 		curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode($fields));
 
-		print("6");
+
 
 		$result = curl_exec($ch);
 		curl_close($ch);
