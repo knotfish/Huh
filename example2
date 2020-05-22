@@ -1,48 +1,41 @@
 
 <?php
 
-	function sendPushNotification($to = '', $data = array()){
-	
-		$apiKey = 'AIzaSyCypTohpSRrCDlCnlA5QtYbyFlQFQj1ib8'; 
-		$fields = array('to' => $to, 'notification' => $msg);
+	function push_notification_android($device_id,$message){
 
-		$headers = array('Authorization: key='.$apiKey, 'Content-Type: application/json');
+    //API URL of FCM
+    $url = 'https://fcm.googleapis.com/fcm/send';
 
-		$url = "https://fcm.googleapis.com/fcm/send";
- 
-		$ch = curl_init(); 
-		curl_setopt( $ch, CURLOPT_URL,$url);
-		
+    /*api_key available in:
+    Firebase Console -> Project Settings -> CLOUD MESSAGING -> Server key*/    $api_key = 'AAAAKZLje1I:APbGQDw8FD...TjmtuINVB-g';
+                
+    $fields = array (
+        'to' => array (
+                $device_id
+        ),
+        'data' => array (
+                "message" => $message
+        )
+    );
 
-		curl_setopt( $ch, CURLOPT_POST, true);
-
-
-
-		curl_setopt( $ch, CURLOPT_HTTPHEADER, $headers);
-
-
-
-		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true);
-
-
-
-		curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false);
-
-
-
-		curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode($fields));
-
-
-
-		$result = curl_exec($ch);
-		curl_close($ch);
-		return json_decode($result, true);
-	
-
-	}
-	$to = "fOyoviWU-EQ:APA91bFYYOot6p1I8P42pi_zPQrGf8Lmzl9tYH4YEVPF-ECmmFGe_-nKMoeVa2dzX7ikAs_OBeZXK8MoY8YhpZq0AOT0Ne47NoKHRfSz_0Etk9W-7IG0qg39UppREZoIuJbod0-mTtD6";
-	$data = array( 
-		'body' => 'message text'
-	);
-	print_r(sendPushNotification($to, $data));
-
+    //header includes Content type and api key
+    $headers = array(
+        'Content-Type:application/json',
+        'Authorization:key='.$api_key
+    );
+                
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
+    $result = curl_exec($ch);
+    if ($result === FALSE) {
+        die('FCM Send Error: ' . curl_error($ch));
+    }
+    curl_close($ch);
+    return $result;
+}

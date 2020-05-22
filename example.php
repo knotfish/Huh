@@ -34,4 +34,5 @@
 		'body' => 'message text'
 	);
 	print_r(sendPushNotification($to, $data));
+	
 
