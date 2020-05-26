@@ -34,5 +34,5 @@
 		'body' => 'message text'
 	);
 	print_r(sendPushNotification($to, $data));
-	
+	//you forgot to push origin you git
 
