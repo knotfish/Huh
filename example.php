@@ -1,6 +1,7 @@
 
 <?php
 
+$title = $_GET['title'];
 $msg = $_GET['msg'];
 
 	function sendPushNotification($to = '', $data = array()){
@@ -35,7 +36,7 @@ $msg = $_GET['msg'];
 	}
 	$to = "e3xqFEJIREE:APA91bGkT9lPMy0hmUxm0-mE8TD19aIbQ-6NHAi2ba2R0OF3ZRP6TnLOQe3QFr9GVDIvHzPdcZJMWcB83df2eIv6PicWDyX7jf52eaGrTspiBZHVs63sz1CZMwrnsXl4jaVrqI4vMGiZ";
 	$data = array(
-		"title" => "Patient 2 Alert", 
+		"title" => $title, 
 		"body" => $msg 
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
