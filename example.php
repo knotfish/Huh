@@ -32,7 +32,8 @@
 
 	}
 	$to = "ceFxpyQ2MMQ:APA91bHJA0hf8bipXLaoeEWEWZ9RoeGhZxZCZWqhBY0uAe33kDpAszJO-o7La07wSEQvTHEm9Of-XWjKyeDae5cg9hi3ay-tyKHsFpZvNf291fif4BXPp8uRbc6MVEVSaZu87TiHASlP";
-	$data = array( 
+	$data = array(
+		'title' => 'ich been neit',
 		'body' => 'message text'
 	);
 	print_r(sendPushNotification($to, $data));
