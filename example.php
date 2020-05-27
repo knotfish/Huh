@@ -31,10 +31,12 @@
 	
 
 	}
-	$to = "ceFxpyQ2MMQ:APA91bHJA0hf8bipXLaoeEWEWZ9RoeGhZxZCZWqhBY0uAe33kDpAszJO-o7La07wSEQvTHEm9Of-XWjKyeDae5cg9hi3ay-tyKHsFpZvNf291fif4BXPp8uRbc6MVEVSaZu87TiHASlP";
+	$to = "e3xqFEJIREE:APA91bGkT9lPMy0hmUxm0-mE8TD19aIbQ-6NHAi2ba2R0OF3ZRP6TnLOQe3QFr9GVDIvHzPdcZJMWcB83df2eIv6PicWDyX7jf52eaGrTspiBZHVs63sz1CZMwrnsXl4jaVrqI4vMGiZ";
 	$data = array(
-		'title' => 'ich been neit',
-		'body' => 'message text'
+		"title" => "title", 
+		"body" => "message", 
+		//"icon" => "https://example.com/icon.png",  
+		//"click_action" => "Nil"
 	);
 	print_r(sendPushNotification($to, $data));
 	//you forgot to push origin you git
