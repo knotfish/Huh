@@ -6,6 +6,7 @@ define( 'API_ACCESS_KEY', 'AAAA2eQqZ-s:APA91bE2sES__AiazY_dMmpw90hFdLXMyfhgFkuO0
 
 $registrationIds = array( $_GET['id'] );
 
+// prep the bundle
 $msg = array
 (
 	'message' 	=> 'here is a message. message',
