@@ -33,8 +33,8 @@
 	}
 	$to = "e3xqFEJIREE:APA91bGkT9lPMy0hmUxm0-mE8TD19aIbQ-6NHAi2ba2R0OF3ZRP6TnLOQe3QFr9GVDIvHzPdcZJMWcB83df2eIv6PicWDyX7jf52eaGrTspiBZHVs63sz1CZMwrnsXl4jaVrqI4vMGiZ";
 	$data = array(
-		"title" => "title", 
-		"body" => "message", 
+		"title" => "Patient 2 Alert", 
+		"body" => "Patient 2 is in need of help", 
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
