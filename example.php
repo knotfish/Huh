@@ -1,7 +1,7 @@
 
 <?php
 
-$msg = $_get("msg");
+$msg = $_GET("msg");
 
 	function sendPushNotification($to = '', $data = array()){
 	
