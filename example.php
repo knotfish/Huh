@@ -2,7 +2,7 @@
 <?php
 
 //$title = $_GET['title'];
-$msg = $_GET['msg'];
+//$msg = $_GET['msg'];
 
 	function sendPushNotification($to = '', $data = array()){
 	
@@ -39,7 +39,7 @@ $msg = $_GET['msg'];
 	$regis = array($token1, $token2);
 	$data = array(
 		"title" => $title, 
-		"body" => $msg 
+		"body" => "ifYouSaidGoodbyeToMeTonight"//$msg 
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
