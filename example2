@@ -2,7 +2,8 @@
 <?php
 
 //$title = $_GET['title'];
-$msg = $_GET["msg"];
+//$msg = $_GET["msg"];
+$msg = "hhhgreg"
 
 	function sendPushNotification($to = '', $data = array()){
 	
