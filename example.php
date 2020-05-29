@@ -44,6 +44,6 @@
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
-	print_r(sendPushNotification($to[], $data));
+	print_r(sendPushNotification($to, $data));
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
 
