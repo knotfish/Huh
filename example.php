@@ -9,7 +9,7 @@
 		
 	
 		$apiKey = 'AAAA2eQqZ-s:APA91bE2sES__AiazY_dMmpw90hFdLXMyfhgFkuO0ExK6pYdOJUxHV4A9U7PA3DhBxswPqMnKbKeMGDkastP-YaUe-Juuxz2Wqa0fHCLRHDUcqGz9q_9zjrRfGsIB7rVK54pu5Hxx5Ff'; 
-		$fields = array('to' => $to, 'notification' => $data);
+		$fields = array('registration_ids' => $to, 'notification' => $data);
 
 		$headers = array('Authorization: key='.$apiKey, 'Content-Type: application/json');
 
