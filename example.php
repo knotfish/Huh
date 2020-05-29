@@ -29,7 +29,9 @@
 
 		curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false);
 
-		curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode($fields));
+		//curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode($fields));
+
+		curl_setopt( $ch, CURLOPT_POSTFIELDS, $fields);
 
 		$result = curl_exec($ch);
 		curl_close($ch);
