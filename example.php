@@ -44,6 +44,6 @@
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
-	print_r(sendPushNotification($regis, $data));
+	print_r(sendPushNotification($to, $data));
 	//you forgot to push origin you git
 
