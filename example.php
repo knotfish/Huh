@@ -41,7 +41,7 @@
 	$to = "APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc";
 	//$regis = array($token1, $token2);
 	$data = array(
-		"title" => $title, 
+		"title" => "letsGrooveTonight", 
 		"body" => "ifYouSaidGoodbyeToMeTonight"//$msg 
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
