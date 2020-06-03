@@ -40,13 +40,17 @@ $msg = $_GET['msg'];
 	$token2 = "c903y31E3fQ:APA91bHJzXoLkizD4W3gRGbPMg3UFCEWu2FS4XdsNf7nrAOEBadk0Sbop1QnNEleAMuE4Gou7nfRpchmdbzB0z1nk2m-Z_Rbw-f6Ehr0RIiZVx6I_VEMO68iiiQgkJsbSXI_kNbOJ_in";
 	//$to = "APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc";
 	$regis = array($token1, $token2);
-	$to = $regis[0];
+	$length = count($regis);
 	$data = array(
 		"title" => $title,//"letsGrooveTonight", 
 		"body" => $msg //"ifYouSaidGoodbyeToMeTonight"//
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
-	print_r(sendPushNotification($to, $data));
+	for(i=0;i<$length;i++){
+		$to = $regis[i];
+		print_r(sendPushNotification($to, $data));
+	}
+	
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
 
