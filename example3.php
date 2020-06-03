@@ -39,13 +39,14 @@ $msg = $_GET['msg'];
 	$token1 = "e3xqFEJIREE:APA91bGkT9lPMy0hmUxm0-mE8TD19aIbQ-6NHAi2ba2R0OF3ZRP6TnLOQe3QFr9GVDIvHzPdcZJMWcB83df2eIv6PicWDyX7jf52eaGrTspiBZHVs63sz1CZMwrnsXl4jaVrqI4vMGiZ";
 	$token2 = "c903y31E3fQ:APA91bHJzXoLkizD4W3gRGbPMg3UFCEWu2FS4XdsNf7nrAOEBadk0Sbop1QnNEleAMuE4Gou7nfRpchmdbzB0z1nk2m-Z_Rbw-f6Ehr0RIiZVx6I_VEMO68iiiQgkJsbSXI_kNbOJ_in";
 	//$to = "APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc";
-	$to = array($token1, $token2);
+	$regis = array($token1, $token2);
+	$to = $regis(0);
 	$data = array(
 		"title" => $title,//"letsGrooveTonight", 
 		"body" => $msg //"ifYouSaidGoodbyeToMeTonight"//
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
-	print_r(sendPushNotification($to(0), $data));
+	print_r(sendPushNotification($to, $data));
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
 
