@@ -47,8 +47,8 @@ $msg = $_GET['msg'];
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
-	for(i=0;i<$length;i++){
-		$to = $regis[i];
+	for($i=0;$i<$length;$i++){
+		$to = $regis[$i];
 		print_r(sendPushNotification($to, $data));
 	}
 	
