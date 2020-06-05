@@ -24,4 +24,5 @@ foreach ($userList as $user	/*$ list(duty, $token*/){
 		print("2");
 	}
 }
+var_dump($userList);
 var_dump($regis);
