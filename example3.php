@@ -15,7 +15,7 @@ curl_close($ch);
 
 $userList = json_decode($list);
 
-print("1");
+//print("a");
 	
 foreach ($userList as $user	){
 	
@@ -83,7 +83,7 @@ foreach ($userList as $user	){
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
-	print("3");
+	print("TTTTTTTTTTTTTTTTTTTTTTTT");
 	
 	for($i=0;$i<$length;$i++){
 		$to = $regis[$i];
