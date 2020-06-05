@@ -13,7 +13,7 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true);
 $list = curl_exec($ch);
 curl_close($ch);
 
-$userList = json_decode($list, true);
+$userList = json_decode($list);
 
 print("1");
 	
