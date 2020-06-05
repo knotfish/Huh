@@ -21,7 +21,7 @@ foreach ($userList as $user	/*$ list(duty, $token*/){
 	if ($duty==true){
 		array_push($regis, '$token');
 		
-		print("2");
+		print("gggggggggggggggggggggggggggg");
 	}
 }
 var_dump($userList);
