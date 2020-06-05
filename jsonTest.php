@@ -18,8 +18,8 @@ print("1");
 foreach ($userList as $user	/*$ list(duty, $token*/){
 	list($duty, $token) = $user;
 	
-	if ($duty=true){
-		array_push($regis, $token);
+	if ($duty==true){
+		array_push($regis, '$token');
 		
 		print("2");
 	}
