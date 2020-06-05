@@ -10,12 +10,17 @@ $ch = curl_init();
 
 curl_setopt( $ch, CURLOPT_URL, 'https://nursecall2-c2dea.firebaseio.com/users.json');
 curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true);
-$userList = curl_exec($cURLConnection);
+$list = curl_exec($ch);
 curl_close($ch);
+
+json_decode($list, true);
+
+print("1");
 	
 foreach ($userList as $user){
 	if ($user("duty")){
 		array_push($regis, $user("token)"));
+		print("2");
 	}
 }
 //$jsonArrayResponse - json_decode($userList);
@@ -33,6 +38,8 @@ foreach ($userList as $user){
 		$headers = array('Authorization: key='.$apiKey, 'Content-Type: application/json');
 
 		$url = "https://fcm.googleapis.com/fcm/send";
+		
+		print("4");
  
 		$ch = curl_init(); 
 		
@@ -54,6 +61,8 @@ foreach ($userList as $user){
 
 		//curl_setopt( $ch, CURLOPT_POSTFIELDS, $fields);
 
+		print("5");
+
 		$result = curl_exec($ch);
 		curl_close($ch);
 		return json_decode($result, true);
@@ -71,6 +80,8 @@ foreach ($userList as $user){
 		//"icon" => "https://example.com/icon.png",  
 		//"click_action" => "Nil"
 	);
+	print("3");
+	
 	for($i=0;$i<$length;$i++){
 		$to = $regis[$i];
 		print_r(sendPushNotification($to, $data));
