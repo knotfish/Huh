@@ -19,7 +19,7 @@ foreach ($userList as $user	/*$ list(duty, $token*/){
 	//list($duty, $token) = $user;
 	
 	if ($user["duty"]==true){
-		array_push($regis, $token);
+		array_push($regis, $user["token"]);
 		
 		print("gggggggggggggggggggggggggggg");
 	}
