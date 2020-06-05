@@ -21,4 +21,4 @@ foreach ($userList as list($duty, $token){
 		print("2");
 	}
 }*/
-var_dump(json_decode($list));
+var_dump($userList, true);
