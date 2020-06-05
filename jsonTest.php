@@ -21,4 +21,4 @@ foreach ($userList as list($duty, $token){
 		print("2");
 	}
 }*/
-print_r($userList)
+//print_r($userList)
