@@ -14,11 +14,11 @@ curl_close($ch);
 $userList = json_decode($list);
 
 print("1");
-	
+/*	
 foreach ($userList as list($duty, $token){
 	if ($duty){
 		array_push($regis, $token);
 		print("2");
 	}
-}
-print_r($regis)
+}*/
+print_r($userList)
