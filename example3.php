@@ -86,9 +86,14 @@ foreach ($userList as $user	){
 	);
 	print("TTTTTTTTTTTTTTTTTTTTTTTT");
 	
-	for($i=0;$i<$length;$i++){
-		$to = $regis[$i];
-		print_r(sendPushNotification($to, $data));
+	if($length>1){
+		for($i=0;$i<$length;$i++){
+			$to = $regis[$i];
+			print_r(sendPushNotification($to, $data));
+		}
+	}
+	else{
+		print("No nurses on duty");
 	}
 	//print_r($to);
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
