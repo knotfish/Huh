@@ -13,7 +13,7 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true);
 $list = curl_exec($ch);
 curl_close($ch);
 
-$userList = json_decode($list);
+$userList = json_decode($list, true);
 
 
 	
@@ -77,7 +77,7 @@ foreach ($userList as $user	){
 	//$to = "APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc";
 	//$regis = array($token1, $token2);
 	*/
-	/*$length = count($regis);
+	$length = count($regis);
 	$data = array(
 		"title" => $title,//"letsGrooveTonight", 
 		"body" => $msg //"ifYouSaidGoodbyeToMeTonight"//
@@ -89,7 +89,7 @@ foreach ($userList as $user	){
 	for($i=0;$i<$length;$i++){
 		$to = $regis[$i];
 		//print_r(sendPushNotification($to, $data));
-	}*/
-	
+	}
+	print_r($to);
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
 
