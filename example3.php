@@ -1,8 +1,8 @@
 
 <?php
 
-//$title = $_GET['title'];
-//$msg = $_GET['msg'];
+$title = $_GET['title'];
+$msg = $_GET['msg'];
 
 $regis = array();
 
@@ -31,7 +31,7 @@ foreach ($userList as $user	){
 
 
 
-	/*function sendPushNotification($to = '', $data = array()){
+	function sendPushNotification($to = '', $data = array()){
 	
 		
 	
@@ -42,7 +42,7 @@ foreach ($userList as $user	){
 
 		$url = "https://fcm.googleapis.com/fcm/send";
 		
-		print("4");
+		
  
 		$ch = curl_init(); 
 		
@@ -64,7 +64,7 @@ foreach ($userList as $user	){
 
 		//curl_setopt( $ch, CURLOPT_POSTFIELDS, $fields);
 
-		print("5");
+		
 
 		$result = curl_exec($ch);
 		curl_close($ch);
@@ -76,7 +76,7 @@ foreach ($userList as $user	){
 	//$token2 = "c903y31E3fQ:APA91bHJzXoLkizD4W3gRGbPMg3UFCEWu2FS4XdsNf7nrAOEBadk0Sbop1QnNEleAMuE4Gou7nfRpchmdbzB0z1nk2m-Z_Rbw-f6Ehr0RIiZVx6I_VEMO68iiiQgkJsbSXI_kNbOJ_in";
 	//$to = "APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc";
 	//$regis = array($token1, $token2);
-	*/
+	
 	$length = count($regis);
 	$data = array(
 		"title" => $title,//"letsGrooveTonight", 
@@ -88,8 +88,8 @@ foreach ($userList as $user	){
 	
 	for($i=0;$i<$length;$i++){
 		$to = $regis[$i];
-		//print_r(sendPushNotification($to, $data));
+		print_r(sendPushNotification($to, $data));
 	}
-	print_r($to);
+	//print_r($to);
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
 
