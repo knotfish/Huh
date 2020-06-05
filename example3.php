@@ -18,7 +18,7 @@ $userList = json_decode($list);
 print("1");
 	
 foreach ($userList as $user){
-	if ($user("duty")){
+	if ($user("duty")=true){
 		array_push($regis, $user("token)"));
 		print("2");
 	}
