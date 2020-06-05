@@ -13,7 +13,7 @@ curl_close($ch);
 
 $userList = json_decode($list, true);
 
-print("1");
+
 	
 foreach ($userList as $user	/*$ list(duty, $token*/){
 	//list($duty, $token) = $user;

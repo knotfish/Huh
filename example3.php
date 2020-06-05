@@ -1,8 +1,8 @@
 
 <?php
 
-$title = $_GET['title'];
-$msg = $_GET['msg'];
+//$title = $_GET['title'];
+//$msg = $_GET['msg'];
 
 $regis = array();
 
@@ -15,7 +15,7 @@ curl_close($ch);
 
 $userList = json_decode($list);
 
-//print("a");
+
 	
 foreach ($userList as $user	){
 	
