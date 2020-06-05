@@ -86,7 +86,7 @@ foreach ($userList as $user	){
 	);
 	print("TTTTTTTTTTTTTTTTTTTTTTTT");
 	
-	if($length>1){
+	if($length>0){
 		for($i=0;$i<$length;$i++){
 			$to = $regis[$i];
 			print_r(sendPushNotification($to, $data));
