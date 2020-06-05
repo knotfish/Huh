@@ -17,7 +17,8 @@ print("1");
 	
 foreach ($userList as list($duty, $token){
 	if ($duty){
-		array_push($regis, $token);
+		//array_push($regis, $token);
+		
 		print("2");
 	}
 }
