@@ -22,7 +22,7 @@ foreach ($userList as $user	){
 	if ($user["duty"]==true){
 		array_push($regis, $user["token"]);
 		
-		print("gggggggggggggggggggggggggggg");
+		print($user["name"]);
 	}
 }
 
