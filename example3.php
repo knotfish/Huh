@@ -1,4 +1,3 @@
-
 <?php
 
 $title = $_GET['title'];
@@ -23,7 +22,7 @@ foreach ($userList as $user	){
 	if ($user["duty"]==true){
 		array_push($regis, $user["token"]);
 		
-		print("gggggggggggggggggggggggggggg");
+		print($user["name"]);
 	}
 }
 
@@ -97,4 +96,3 @@ foreach ($userList as $user	){
 	}
 	//print_r($to);
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
-
