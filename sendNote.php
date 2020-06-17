@@ -94,5 +94,11 @@ foreach ($userList as $user	){
 	else{
 		print("No nurses on duty");
 	}
+	
+	$response = array();
+
+	$response["success"] = 1;
+    $response["message"] = "Product successfully updated.";
+	echo json_encode($response);
 	//print_r($to);
 	//	APA91bHJGdOmaj5n2hBqSHxmpdPeOJSJNDt9SrK7mEMKr-oYFYJjUvCotKn734FBivReLnj2G8-MavHtz9ZtIv2hJz_u4FkhazYJl74fomPxu5cqPgUTmTc
